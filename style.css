@@ -1,0 +1,124 @@
+         body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(255, 255, 247);
+            float: left;
+         }
+
+        h1 {
+            color: rgb(126, 23, 126); 
+        }
+        body {
+            margin-left: 70px;
+            position: absolute;
+        }
+
+
+        body {
+            margin-right: 0px;
+        }
+
+        .menu {
+            position:fixed;
+            z-index: 1;
+            left: 0px; top: 0px;
+            height: 100%;
+            background-color: blanchedalmond;
+            min-width: 30px;  
+            text-align: center;
+        }
+
+        .menu:hover {
+            width: 109px;
+        }
+
+        .menu:hover .menu-item {
+            display: block;
+        }
+
+        .menu-item {
+            display: none;
+            padding: 10px 30px 10px 30px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background-color: cadetblue;
+        }
+
+        .dropdown {
+            display: inline-block;
+            background-color: blanchedalmond;
+            position: absolute;
+            top: 0px;
+            left: 109px;
+            display: none;
+        }
+
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px 30px 10px 30px;
+            white-space:nowrap;
+        }
+
+        .dropdown-item:hover {
+            background-color: cadetblue;
+        }
+
+        .dropdown-item a {
+            color:cornflowerblue;
+            text-decoration: none;
+        }
+
+
+
+
+
+
+  
+        #board {
+         width: 640px; 
+         height: 640px;
+         display: inline-block;
+         border: 5px solid rgb(0, 0, 0);
+         position: absolute;
+        }
+ 
+        .square {
+         width: 80px; 
+         height: 80px;
+         float: left;
+         position: relative;
+        }
+ 
+        .light {
+         background-color: rgb(223, 175, 104); 
+        }
+ 
+        .dark {
+         background-color: rgb(94, 70, 33); 
+        }
+ 
+        .piece {
+         width: 70px; 
+         height: 70px;
+         border-radius: 70px;
+         padding: 2px;
+         position: relative;
+         left: 5px;
+         top: 3px;
+         left: 3px;
+        }
+ 
+        .black {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .red {
+            background-color: maroon;
+        }
+ 
