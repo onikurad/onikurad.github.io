@@ -1,0 +1,30 @@
+{%extends "main.html"%}
+
+{% block container %}
+<h1> Here is the requested FizzBuzz sequence:</h1>
+<ul >
+    <style>
+        ul{
+            color:rgb(38, 12, 153);
+            margin-left:30%;
+            font-size:25px;
+        }
+    </style>
+
+    {% for num in numbers %}
+        {% if  num %  3 == 0 and num % 5 == 0%}
+        <li> {{"FizzBuzz"}}</li>
+        {% elif num % 5 == 0 %}
+        <li>{{"Buzz"}} </li>
+        {% elif num % 3 == 0 %}
+        <li>{{"Fizz"}} </li>
+        {%else%}
+        <li>{{num}} </li>
+        
+
+        {%endif%}
+    {%endfor%}
+
+</ul>
+
+{% endblock %}
